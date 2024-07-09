@@ -785,3 +785,114 @@ a.btn.services__btn {
   height: 56px;
   background-color: transparent;
 }
+
+/* staff  */
+
+.staff {
+  padding: 130px 0;
+  background-color: var(--bg-color-primary);
+  text-align: center;
+}
+
+.staff__sub-title {
+  color: #5e6085;
+  text-align: center;
+  font-family: Sora;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1em; /* 100% */
+}
+
+.staff__title {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.staff__block {
+  margin-top: 78px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 35px;
+}
+
+.staff__item {
+  width: calc(25% - 26px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.staff__box {
+  width: 88%;
+  height: 266px;
+  border-radius: 129.5px;
+  background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+}
+
+.staff__box.staff__box-2 {
+  background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
+}
+
+.staff__box.staff__box-3 {
+  background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
+}
+
+.staff__box.staff__box-4 {
+  background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
+}
+
+.staff__avt {
+  width: 100%;
+  height: 299px;
+  border-radius: 129.5px;
+  /* background-color: hwb(234 0% 65% / 0.341); */
+  overflow: hidden;
+  transform: translateY(-33px);
+}
+
+.staff__avt img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.staff__decor {
+  position: absolute;
+  width: 100%;
+  transform: translateY(145px);
+}
+
+.staff__decor-180 {
+  transform: translateY(5px);
+}
+
+.staff__specialize {
+  margin-top: 29px;
+  color: var(--text-color);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1em; /* 100% */
+}
+
+.staff__name {
+  margin-top: 14px;
+  color: var(--text-title-color);
+  text-align: center;
+  font-family: Sora;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1em; /* 100% */
+}
+
+a.btn.staff__btn {
+  margin-top: 48px;
+  width: 193px;
+  height: 56px;
+  background-color: transparent;
+}
