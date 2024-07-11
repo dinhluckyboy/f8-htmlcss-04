@@ -1047,3 +1047,119 @@ a.btn.staff__btn {
   font-weight: 400;
   line-height: 1em; /* 100% */
 }
+
+/* reviews  */
+
+.reviews {
+  padding: 76px 0 130px;
+  background-color: var(--bg-color-primary);
+}
+
+.reviews__arrow {
+  transform: translateY(202px);
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary-color);
+}
+
+.reviews__arrow-left,
+.reviews__arrow-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1px solid hsla(13, 100%, 59%, 0.6);
+  background-color: transparent;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.reviews__arrow-left:hover,
+.reviews__arrow-right:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.reviews__content {
+  display: flex;
+  justify-content: center;
+  column-gap: 115px;
+}
+
+.reviews__picture {
+  width: 274px;
+  height: 350px;
+  border-radius: 137px;
+  background: #ffda54;
+}
+
+.reviews__img {
+  width: 100%;
+  height: 427px;
+  border-radius: 137px;
+  transform: translateY(-77px);
+  /* background-color: hsla(234, 100%, 17%, 0.278); */
+  overflow: hidden;
+}
+
+.reviews__img img {
+  height: 130%;
+  transform: translate(-10%, -10%);
+}
+
+.reviews__info {
+  width: 47%;
+}
+
+.reviews__feedback {
+  margin-top: 24px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.55em; /* 155.556% */
+}
+
+.reviews__author {
+  display: flex;
+  align-items: center;
+  margin-top: 34px;
+  color: #282828;
+  font-family: Sora;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1em; /* 100% */
+}
+
+.reviews__author::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: #000;
+  border-radius: 1px;
+  margin-right: 8px;
+}
+
+.reviews__positioning {
+  transform: translateX(50%);
+  margin-top: 56px;
+  display: flex;
+  column-gap: 8px;
+}
+
+.reviews__positioning-item {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #ff5b2e;
+}
+
+.reviews__positioning-item.active {
+  width: 24px;
+  background: #ff5b2e;
+  border-radius: 4px;
+}
