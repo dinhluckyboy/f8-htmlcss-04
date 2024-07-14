@@ -93,8 +93,15 @@
     />
     <meta name="theme-color" content="#ffffff" />
     <!-- animation  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body style="height: 10000px">
+  <body>
     <!-- header  -->
     <header class="header sticky">
       <div class="container header__content">
@@ -167,7 +174,9 @@
             </figure>
             <!-- info  -->
             <section class="hero__info">
-              <h1 class="title hero__title">
+              <h1
+                class="title hero__title wow animate__animated animate__bounce"
+              >
                 Established & Trusted Pet Care Service
               </h1>
               <p class="hero__desc">
@@ -204,7 +213,11 @@
             <!-- info  -->
             <div class="about__info">
               <p class="about__sub-title">// About //</p>
-              <h2 class="title about__title">Best Agency For Your Pet.</h2>
+              <h2
+                class="title about__title wow animate__animated animate__pulse"
+              >
+                Best Agency For Your Pet.
+              </h2>
               <p class="about__desc">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -1155,5 +1168,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
