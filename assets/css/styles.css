@@ -135,6 +135,21 @@ a.btn.header__sign-up:hover {
   opacity: 0.8;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 2);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-3 {
+  --line-clamp: 3;
+}
+
+.word-break-all {
+  word-break: break-all;
+}
+
 /* hero  */
 
 .hero {
@@ -1053,6 +1068,7 @@ a.btn.staff__btn {
 .reviews {
   padding: 76px 0 130px;
   background-color: var(--bg-color-primary);
+  overflow: hidden;
 }
 
 .reviews__arrow {
@@ -1162,4 +1178,113 @@ a.btn.staff__btn {
   width: 24px;
   background: #ff5b2e;
   border-radius: 4px;
+}
+
+/* blog  */
+
+.blog {
+  padding-bottom: 131px;
+  background-color: var(--bg-color-primary);
+  overflow: hidden;
+}
+
+.blog__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog__content {
+  width: 36%;
+}
+
+.blog__desc {
+  width: 83%;
+  color: var(--text-color);
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.87em; /* 187.5% */
+}
+
+a.btn.blog__btn {
+  margin-top: 24px;
+  width: 182px;
+  height: 56px;
+  background-color: transparent;
+}
+
+.blog__bottom {
+  margin-top: 54px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog__item {
+  width: calc(33.33% - 32px);
+}
+
+.blog__item:hover .blog__img {
+  width: 100%;
+  height: 100%;
+}
+
+.blog__illus {
+  position: relative;
+  padding-top: 24px;
+  padding-left: 36px;
+  width: 100%;
+  height: 362px;
+  border-radius: 24px;
+  background: #90ccff;
+  overflow: hidden;
+}
+
+.blog__illus.blog__illus-2 {
+  background-color: #ff997e;
+}
+
+.blog__illus.blog__illus-3 {
+  background: #5bd6e2;
+}
+
+.blog__time {
+  color: #fff;
+  font-family: Sora;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.21em; /* 121.429% */
+}
+
+.blog__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 322px;
+  max-width: 100%;
+  height: 296px;
+  object-fit: cover;
+  transition: width 0.2s, height 0.2s;
+}
+
+.blog__item-title {
+  margin-top: 28px;
+  color: var(--text-title-color);
+  font-family: Sora;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.54em; /* 154.545% */
+}
+
+.blog__item-desc {
+  margin-top: 16px;
+  color: var(--text-color);
+  font-family: Poppins;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71em; /* 171.429% */
 }
