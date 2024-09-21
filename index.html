@@ -7,6 +7,7 @@
     <!-- css  -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <!-- font  -->
     <!-- Poppins font & Sora font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -108,7 +109,7 @@
         <div class="header__logo">
           <a href="#!"><img src="./assets/img/Logo.svg" alt="" /></a>
         </div>
-        <div class="header__nav">
+        <div class="header__nav hide-on-tablet-mobile">
           <ul>
             <li class="active"><a href="#!">Home</a></li>
             <li><a href="#!">About</a></li>
@@ -118,6 +119,44 @@
           </ul>
         </div>
         <a href="#!" class="btn header__sign-up">Sign Up</a>
+        <!-- bars mobile  -->
+        <label for="check-bars" class="bars-mobile">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            fill="currentColor"
+          >
+            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </label>
+      </div>
+    </header>
+    <!-- mobile-header  -->
+    <header class="mobile-header hide-on-pc">
+      <!-- check-bars  -->
+      <input
+        type="checkbox"
+        name="check-bars"
+        id="check-bars"
+        class="check-bars"
+        hidden
+      />
+      <!-- menu-overlay  -->
+      <label for="check-bars" class="menu-overlay"></label>
+      <!-- menu-drawer  -->
+      <div class="menu-drawer">
+        <div class="nav-mobile">
+          <ul>
+            <li class="active"><a href="#!">Home</a></li>
+            <li><a href="#!">About</a></li>
+            <li><a href="#!">Services & Rates</a></li>
+            <li><a href="#!">Reviews</a></li>
+            <li><a href="#!">Contacts Us</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -583,7 +622,7 @@
               </div>
             </section>
           </div>
-          <figure class="services__illus">
+          <figure class="services__illus hide-on-tablet-mobile">
             <div class="services__picture">
               <img src="./assets/img/services__picture.png" alt="" />
             </div>
@@ -888,6 +927,7 @@
       <section class="reviews">
         <div class="container">
           <div class="reviews__arrow">
+            <!-- arrow-left  -->
             <a href="#!">
               <div class="reviews__arrow-left">
                 <svg
@@ -913,6 +953,38 @@
                   />
                 </svg></div
             ></a>
+
+            <!-- content  -->
+            <div class="reviews__content">
+              <!-- illustration  -->
+              <figure class="reviews__illus">
+                <div class="reviews__picture">
+                  <div class="reviews__img">
+                    <img src="./assets/img/reviews-img.png" alt="" />
+                  </div>
+                </div>
+              </figure>
+              <!-- info  -->
+              <div class="reviews__info">
+                <h2 class="title reviews__title">Our Reviews</h2>
+                <p class="reviews__feedback">
+                  “It was very comforting to recieve a text and pics each day
+                  about our pets and how they were doing. It was also nice that
+                  my pets were in the comfortable environment of their own home
+                  and received playfull attention from our pet sitters as well.
+                  Thanks so much!”
+                </p>
+                <p class="reviews__author">Karla Deras</p>
+                <div class="reviews__positioning">
+                  <div class="reviews__positioning-item active"></div>
+                  <div class="reviews__positioning-item"></div>
+                  <div class="reviews__positioning-item"></div>
+                  <div class="reviews__positioning-item"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- arrow-right  -->
             <a href="#!">
               <div class="reviews__arrow-right">
                 <svg
@@ -938,34 +1010,6 @@
                   />
                 </svg></div
             ></a>
-          </div>
-          <div class="reviews__content">
-            <!-- illustration  -->
-            <figure class="reviews__illus">
-              <div class="reviews__picture">
-                <div class="reviews__img">
-                  <img src="./assets/img/reviews-img.png" alt="" />
-                </div>
-              </div>
-            </figure>
-            <!-- info  -->
-            <div class="reviews__info">
-              <h2 class="title reviews__title">Our Reviews</h2>
-              <p class="reviews__feedback">
-                “It was very comforting to recieve a text and pics each day
-                about our pets and how they were doing. It was also nice that my
-                pets were in the comfortable environment of their own home and
-                received playfull attention from our pet sitters as well. Thanks
-                so much!”
-              </p>
-              <p class="reviews__author">Karla Deras</p>
-            </div>
-          </div>
-          <div class="reviews__positioning">
-            <div class="reviews__positioning-item active"></div>
-            <div class="reviews__positioning-item"></div>
-            <div class="reviews__positioning-item"></div>
-            <div class="reviews__positioning-item"></div>
           </div>
         </div>
       </section>
@@ -1001,7 +1045,7 @@
                 </p>
               </a>
               <a href="#!">
-                <p class="blog__item-desc line-clamp line-3 word-break-all">
+                <p class="blog__item-desc line-clamp line-3">
                   There isn’t a relationship around that can survive without
                   trust. My relationship with my dog Peyton is deep There isn’t
                   a relationship around that can survive without trust. My
@@ -1028,7 +1072,7 @@
                 </p>
               </a>
               <a href="#!">
-                <p class="blog__item-desc line-clamp line-3 word-break-all">
+                <p class="blog__item-desc line-clamp line-3">
                   Doting pet parents have a relentless need to constantly
                   photograph every adorable pet moment Doting pet parents have a
                   relentless need to constantly photograph every adorable pet
@@ -1055,7 +1099,7 @@
                 </p>
               </a>
               <a href="#!">
-                <p class="blog__item-desc line-clamp line-3 word-break-all">
+                <p class="blog__item-desc line-clamp line-3">
                   It is easy to forget that animals are living creatures with a
                   beating heart.
                 </p>
